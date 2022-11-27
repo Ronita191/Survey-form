@@ -1,0 +1,90 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="form.css">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css"href="S.css">
+</head>
+<body>
+    <div class="container ">
+        <header class="header">
+            
+            <h1 id="title">
+                Skill++ Survey 
+            </h1>
+            <p id="description">
+                Thank you for taking the time to help us to improve the plateform
+            </p>
+        </header>
+        <form action="backend.php" id="survey-form">
+
+            <!-- Text section -->
+            <div>
+                 
+                <label for="name"> What is your Name ?</label><br>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+            </div>
+            <br>
+            <!-- end of text section -->
+
+            <!-- Type Email section -->
+            <div>
+            
+                <label for="email"> What is your Email address?</label><br>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Enter your Email address" required>
+            </div>
+            <br>
+            <!-- end of Email section -->
+
+            <!-- Type Number section -->
+            <div>
+            
+                <label for="age">What is your age ?</label><br>
+                <input type="number" name="age" id="age" class="formControl" placeholder="Enter your age" required>
+            </div> 
+            <br>
+            <!-- end of Number section -->
+
+            
+
+            <!-- select section -->
+            <div class="form-group">
+                <label for="role"><label-role>
+                     <p> Which option best describe your current role ?</p> 
+                <select name="role" required id="dropdown" class="formControl">
+                   
+                    <option value="student" selected> Student</option>
+                    <option value="fulltime ">Full time job</option>
+                    <option value="parttime"> Part time Job</option>
+                    <option value="freelancer">Freelancer</option>
+                </select>
+            </div>
+            <!-- end of select section -->
+            <br>
+            <div>
+                Would you recommend[Company Name]to a friend ?: <br>
+                Definitely<input type="radio" name="company name"><br> Maybe<input type="radio" name="company name"><br> Not Sure<input type="radio" name="company name"> 
+            </div>
+            <br>
+            <div>
+                What would you like to see improved?(Check all that apply) <br>
+                Front-end projects<input type="radio" name="company name"><br> Back-end projects<input type="radio" name="company name"><br> Challenges<input type="radio" name="company name"> 
+            </div>
+            
+
+            <!-- Textarea section -->
+            <div class="form-group">
+                <p id="quest">Any comments or suggestions</p>
+                <textarea name="suggestions"  cols="30" rows="5"  id="suggestions" class="textarea" placeholder="Enter your comments here..."></textarea>
+            </div>
+            <br>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
